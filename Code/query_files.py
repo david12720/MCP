@@ -2,7 +2,7 @@ from sentence_transformers import SentenceTransformer
 from chromadb import PersistentClient
 
 # Load same model and database
-model = SentenceTransformer(r"C:\AI_Models\all-MiniLM-L6-v2")
+model = SentenceTransformer("all-MiniLM-L6-v2")
 chroma_client = PersistentClient(path="./file_index_db")
 collection = chroma_client.get_or_create_collection("files")
 

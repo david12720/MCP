@@ -6,7 +6,7 @@ from chromadb.config import Settings
 from chromadb import PersistentClient
 
 # Init model and ChromaDB
-model = SentenceTransformer(r"C:\AI_Models\all-MiniLM-L6-v2")  #  "all-MiniLM-L6-v2")  # free + fast
+model = SentenceTransformer("all-MiniLM-L6-v2")  # (r"C:\AI_Models\all-MiniLM-L6-v2") free + fast
 #chroma_client = PersistentClient(path="./file_index_db")
 
 chroma_client = chromadb.PersistentClient(
